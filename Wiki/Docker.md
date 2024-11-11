@@ -115,3 +115,21 @@ Stop and remove all containers, networks, volumes, and images created by `docker
 docker-compose down
 ```
 -`-v`: Remove volumes associated with the containers.
+
+# 17. Dockerhub login
+Log in to Dockerhub account.
+```bash
+docker login -u <username>
+```
+
+# 18. Dockerhub tag image
+Tagging the image with Dockerhub username and repository name.
+```bash
+docker tag <image_name>:<tag> <username>/<repository_name>:<tag>
+```
+
+# 19. Dockerhub push image
+Pushing image to Docker Hub
+```bash
+docker push <username>/<repository_name>:<tag>
+```
